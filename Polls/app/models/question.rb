@@ -18,4 +18,5 @@ class Question < ActiveRecord::Base
     :foreign_key => :question_id,
     :primary_key => :id
   )
+
 end

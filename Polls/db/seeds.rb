@@ -20,7 +20,9 @@ ActiveRecord::Base.transaction do
   questions = Question.create([
     { text: "How are you today?", poll_id: 2 },
     { text: "How much do you feel you are learning?", poll_id: 2 },
-    { text: "This is a fake question?", poll_id: 1 }
+    { text: "This is a fake question?", poll_id: 1 },
+    { text: "This is another fake question?", poll_id: 1 },
+    { text: "This is yet another fake question?", poll_id: 1 }
   ])
 
   answers = AnswerChoice.create([

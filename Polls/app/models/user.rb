@@ -1,7 +1,6 @@
 class User < ActiveRecord::Base
   # attr_accessible :title, :body
   attr_accessible :user_name
-
   validates :user_name, :uniqueness => true, :presence => true
 
   has_many(
@@ -16,4 +15,5 @@ class User < ActiveRecord::Base
     :foreign_key => :author_id,
     :primary_key => :id
   )
+
 end
